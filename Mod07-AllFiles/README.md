@@ -44,7 +44,7 @@
 
 3. Open a browser tab and navigate to **http://\<SmartHotelHostIP-Address\>**. You should see the SmartHotel application, which is running on nested VMs within Hyper-V on the SmartHotelHost. (The application doesn't do much: you can refresh the page to see the list of guests or select 'CheckIn' or 'CheckOut' to toggle their status.)
 
-    ![Browser screenshot showing the SmartHotel application.](/AllFiles/Images/smarthotel.png)
+    ![Browser screenshot showing the SmartHotel application.](/Images/smarthotel.png)
 
     > **Note:** If the SmartHotel application is not shown, wait 10 minutes and try again. It takes **at least 1 hour** from the start of template deployment. You can also check the CPU, network and disk activity levels for the SmartHotelHost VM in the Azure portal, to see if the provisioning is still active.
 
@@ -64,6 +64,6 @@ The SmartHotel application comprises 4 VMs hosted in Hyper-V:
 
 For simplicity, there is no redundancy in any of the tiers.
 
-![A slide shows the on-premises SmartHotel application architecture.](/AllFiles/Images/overview.png)
+![A slide shows the on-premises SmartHotel application architecture.](/Images/overview.png)
 
 1. Continue in the **Treinamento Azure Expert**.
