@@ -49,7 +49,7 @@
 
     > **Note:** If the SmartHotel application is not shown, wait 10 minutes and try again. It takes **at least 1 hour** from the start of template deployment. You can also check the CPU, network and disk activity levels for the SmartHotelHost VM in the Azure portal, to see if the provisioning is still active.
 
-1. Connect to RDP session in host Hyper-V with credentials, username: **demouser**, and password: **demo!pass123** and Virtual Machines username: **administrator** and password same.
+4. Connect RDP session in the **SmartHotelHost**  with credentials, username: **demouser**, and password: **demo!pass123** and Virtual Machines username: **administrator** and password same.
 
 You should follow all steps provided *before* performing the Hands-on lab.
 
