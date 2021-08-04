@@ -1,5 +1,4 @@
-## Treinamento Azure Expert
-## Mod 07 - Aula 08 - Deploy the On-premises environment (60 minutes)
+## Azure Expert - Mod 07 - Aula 08 - Deploy the On-premises environment on Hyper-V (60 minutes)
 
 ## Requirements
 
