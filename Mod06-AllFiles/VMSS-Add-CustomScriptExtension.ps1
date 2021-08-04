@@ -1,21 +1,31 @@
-﻿# Connect Azure
+# Connect Azure
 Connect-AzAccount
 
 # Set Script 
 $customConfig = @{ 
-  "fileUris" = (,"SourceGitHub"); 
-  "commandToExecute" = "powershell -ExecutionPolicy Unrestricted -File ScriptName.ps1" 
+  "fileUris" = (,"https://raw.githubusercontent.com///VMSS-Install-IIS_v1.ps1"); 
+  "commandToExecute" = "powershell -ExecutionPolicy Unrestricted -File VMSS-Install-IIS_v1.ps1" 
 } 
 
 # Set VMSS variables
-$rgname = "ResourceGroup"
-$vmssname = "VMSSName"
+$rgname = "rgname"
+$vmssname = "vmssname"
  
 # Get VMSS object 
 $vmss = Get-AzVmss -ResourceGroupName $rgname -VMScaleSetName $vmssname
  
 # Add VMSS extension 
-$vmss = Add-AzVmssExtension -Name "CustomScript" -VirtualMachineScaleSet $vmss -Publisher "Microsoft.Compute" -Type "CustomScriptExtension" -TypeHandlerVersion "1.9" -Setting $customConfig 
- 
-# Update VMMS 
-Update-AzVmss -ResourceGroupName $rgname -Name $vmssname -VirtualMachineScaleSet $vmss 
+$vmss = Add-AzVmssExtension -Name "CustomScript" -VirtualMachineScaleSet $vmss -Publisher "Microsoft.Compute" -Type "CustomScriptExtension" -TypeHandlerVersion "1.9" -Setting $customConfig
+
+# Update VMSS 
+Update-AzVmss -ResourceGroupName $rgname -Name $vmssname -VirtualMachineScaleSet $vmss
+
+# Optional
+# Remove VMSS extension
+Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name "CustomScript" -Confirm
+
+# Update VMSS 
+Update-AzVmss -ResourceGroupName $rgname -Name $vmssname -VirtualMachineScaleSet $vmss
+
+
+
