@@ -1,4 +1,5 @@
-## Azure Expert - Mod 07 - Aula 08 - Deploy the On-premises environment on Hyper-V (60 minutes)
+## Azure Expert - Mod 07 - Aula 08
+## Deploy the On-premises environment on Hyper-V (60 minutes)
 
 ## Requirements
 
@@ -32,7 +33,7 @@
 
     You can deploy the template by selecting the 'Deploy to Azure' button below. You will need to create a new resource group **RG-SmartHotel-Onpremises**. You will also need to select a location **East US 2 or other** close to you to deploy the template to. Then choose **Review + create** followed by **Create**. 
 
-    <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fcloudworkshop.blob.core.windows.net%2Fline-of-business-application-migration%2Fsept-2020%2FSmartHotelHost.json" target="_blank">![Button to deploy the SmartHotelHost template to Azure.](/AllFiles/Images/deploy-to-azure.png)</a>
+    <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fcloudworkshop.blob.core.windows.net%2Fline-of-business-application-migration%2Fsept-2020%2FSmartHotelHost.json" target="_blank">![Button to deploy the SmartHotelHost template to Azure.](/Images/deploy-to-azure.png)</a>
 
     > **Note:** The template will take around 6-7 minutes to deploy. Once template deployment is complete, several additional scripts are executed to bootstrap the lab environment. **Allow at least 1 hour from the start of template deployment for the scripts to run.**
 
