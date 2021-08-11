@@ -1,4 +1,4 @@
-## Azure Expert - Mod 07 - Aula 08
+## Azure Expert - Mod 07 - Aula 08 
 ## Deploy the On-premises environment on Hyper-V (60 minutes)
 
 ## Requirements
@@ -33,7 +33,7 @@
 
     You can deploy the template by selecting the 'Deploy to Azure' button below. You will need to create a new resource group **RG-TAE-SmartHotel-Onpremises**. You will also need to select a location **East US 2 or other** close to you to deploy the template to. Then choose **Review + create** followed by **Create**. 
 
-    <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fcloudworkshop.blob.core.windows.net%2Fline-of-business-application-migration%2Fsept-2020%2FSmartHotelHost.json" target="_blank">![Button to deploy the SmartHotelHost template to Azure.](/Images/deploy-to-azure.png)</a>
+    <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fcloudworkshop.blob.core.windows.net%2Fline-of-business-application-migration%2Fsept-2020%2FSmartHotelHost.json" target="_blank">![Button to deploy the SmartHotelHost template to Azure.](/Mod07-AllFiles/Images/deploy-to-azure.png)</a>
 
     > **Note:** The template will take around 6-7 minutes to deploy. Once template deployment is complete, several additional scripts are executed to bootstrap the lab environment. **Allow at least 1 hour from the start of template deployment for the scripts to run.**
 
@@ -45,9 +45,11 @@
 
 3. Open a browser tab and navigate to **http://\<SmartHotelHostIP-Address\>**. You should see the SmartHotel application, which is running on nested VMs within Hyper-V on the SmartHotelHost. (The application doesn't do much: you can refresh the page to see the list of guests or select 'CheckIn' or 'CheckOut' to toggle their status.)
 
-    ![Browser screenshot showing the SmartHotel application.](/Images/smarthotel.png)
+    ![Browser screenshot showing the SmartHotel application.](/Mod07-AllFiles/Images/smarthotel.png)
 
     > **Note:** If the SmartHotel application is not shown, wait 10 minutes and try again. It takes **at least 1 hour** from the start of template deployment. You can also check the CPU, network and disk activity levels for the SmartHotelHost VM in the Azure portal, to see if the provisioning is still active.
+
+4. Connect RDP session in the **SmartHotelHost**  with credentials, username: **demouser**, and password: **demo!pass123** and Virtual Machines username: **administrator** and password same.
 
 You should follow all steps provided *before* performing the Hands-on lab.
 
@@ -65,7 +67,7 @@ The SmartHotel application comprises 4 VMs hosted in Hyper-V:
 
 For simplicity, there is no redundancy in any of the tiers.
 
-![A slide shows the on-premises SmartHotel application architecture.](/Images/overview.png)
+![A slide shows the on-premises SmartHotel application architecture.](/Mod07-AllFiles/Images/overview.png)
 
 ## Azure Expert - Mod 07 - Aula 09
 # Deploy the On-premises environment on Azure (30 minutes)
