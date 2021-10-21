@@ -53,22 +53,6 @@
 
 You should follow all steps provided *before* performing the Hands-on lab.
 
-## Solution architecture
-
-The SmartHotel application comprises 4 VMs hosted in Hyper-V:
-
-- **Database tier** Hosted on the smarthotelSQL1 VM, which is running Windows Server 2016 and SQL Server 2017.
-
-- **Application tier** Hosted on the smarthotelweb2 VM, which is running Windows Server 2012 R2.
-
-- **Web tier** Hosted on the smarthotelweb1 VM, which is running Windows Server 2012 R2.
-
-- **Web proxy** Hosted on the  UbuntuWAF VM, which is running Nginx on Ubuntu 18.04 LTS.
-
-For simplicity, there is no redundancy in any of the tiers.
-
-![A slide shows the on-premises SmartHotel application architecture.](/Mod07-AllFiles/Images/overview.png)
-
 ## Azure Expert - Mod 07 - Aula 09
 # Deploy the VMs environment on Azure (30 minutes)
 
