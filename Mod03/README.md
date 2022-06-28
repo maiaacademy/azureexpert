@@ -1,4 +1,4 @@
-## Azure Expert - Mod 07 - Aula 08 
+## Azure Expert - Mod 03 
 ## Deploy the On-premises environment on Hyper-V (60 minutes)
 
 ## Requirements
